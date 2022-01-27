@@ -13,16 +13,7 @@ npm start
 ## Usage
 
 ```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+![Face Detection](https://raw.githubusercontent.com/DogukanErmis/react-tensorflow-face-detection/master/Capture.PNG)
 ```
 
 ## Contributing
