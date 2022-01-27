@@ -1,9 +1,19 @@
 import "./App.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import * as faceapi from "face-api.js";
 
 function App() {
   const imgRef = useRef();
   const canvasRef = useRef();
+
+  useEffect(() => {
+    const loadModels = () => {
+      faceapi.nets.tinyFaceDetector
+        .loadFromUri("/models")
+        .then(console.log("done"))
+        .catch((e) => console.log(e));
+    };
+  }, []);
 
   return (
     <div className="App">
